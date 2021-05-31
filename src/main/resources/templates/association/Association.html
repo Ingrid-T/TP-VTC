@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<nav class="navbar navbar-dark bg-dark">
+	  <ul>
+	  	<li><a href="">Conducteur</a></li>
+	  	<li><a href="">Vehicule</a></li>
+	  	<li><a href="">Association</a></li>
+	  </ul>
+	</nav>
+	<div class= "container">
+	<form method="post" th:action="@{/ajout-user}" th:object"${user}">
+	  <div class="mb-3">
+	    <label for="exampleInputEmail1" class="form-label">Conducteur</label>
+	    <select>Choisir le conducteur
+	    	<option> </option>
+	    </select>
+	    
+	  <div class="mb-3">
+	    <label for="exampleInputPassword1" class="form-label">Vehicule</label>
+	    <select>Choisir le vehicule
+	    	<option> </option>
+	    </select>
+	  </div>
+	  <button type="submit" class="btn btn-primary">Ajouter cette association</button>
+	</form>
+</div>
+	
+</body>
+</html>
